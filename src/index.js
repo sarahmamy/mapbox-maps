@@ -23,7 +23,7 @@ let store = createStore(
 
 store.subscribe(()=>{
   const state = store.getState();
-  const keys = ['userLocation'];
+  const keys = ['userLocation', 'mapCenter'];
   const persistedState = {};
   keys.forEach((key) => {
     persistedState[key] = state[key];
